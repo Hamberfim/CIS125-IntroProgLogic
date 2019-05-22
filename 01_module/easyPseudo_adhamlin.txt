@@ -1,0 +1,5 @@
+start
+	input name
+	greeting = "Hello " + name
+	output greeting
+stop
