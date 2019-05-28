@@ -1,0 +1,15 @@
+START
+	Declaration:
+		num originalNumber
+		num calculatedAnswer
+	
+	Input from user as originalNumber
+
+	Is originalNumber = 0?:
+		STOP
+	Else:
+		Compute calculatedAnswer as originalNumber times 2
+	
+	Output calculatedAnswer
+
+	Return to input from user
