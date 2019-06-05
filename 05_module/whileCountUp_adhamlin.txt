@@ -1,0 +1,9 @@
+Start
+    count = 1
+
+    while count <> 11:
+        outout count
+        count = count + 1
+    while end
+    output "Lift Off!"
+stop
