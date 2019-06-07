@@ -1,7 +1,0 @@
- start
-     while userWantsToInputValues
-          ask for input
-          process input
-          ask if user wants to input more
-     endwhile
- stop

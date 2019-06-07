@@ -1,9 +1,0 @@
-Start
-    count = 10
-
-    while count <> 0:
-        outout count
-        count = count - 1
-    while end
-    output "Lift Off!"
-stop

@@ -1,9 +1,0 @@
-start
-    num LIMIT = 6 # assuming index starts at one and not zero
-    randomNumber = random(LIMIT)
-
-    while randomNumber <> 6:
-        output randomNumber
-    while end
-    output "You rolled a six, all done."
-stop
