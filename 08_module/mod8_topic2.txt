@@ -1,0 +1,35 @@
+start
+    num converted
+    num dollarAmount = input "Enter dollar Amount: "
+    string chooseConversion = input 'Select curreny to convert to: ("JPY", "GBP", "CNY")'
+    string yourConvertedAmount = "Here is your currency conversion: "
+
+
+    if chooseConversion = "CNY" then
+        converted = convertCNY(dollarAmount)
+        ouput yourConvertedAmount, converted
+    else if chooseConversion = "GBP" then
+        converted = convertGDP(dollarAmount)
+        ouput yourConvertedAmount, converted
+    else if chooseConversion = "JPY" then
+        converted = convertJPY(dollarAmount)
+        ouput yourConvertedAmount, converted
+    elif chooseConversion != "CNY" or chooseConversion != "GBP" or chooseConversion != "JPY" then
+        ouput "Select from the three choices only"
+    endif
+
+
+    convertCNY(num amount)
+
+    return (amount * 6.92)
+
+
+    convertGDP(num amount)
+
+    return (amount * 0.79)
+
+
+    convertJPY(num amount)
+
+    return (amount * 108.32)
+stop
