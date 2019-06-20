@@ -1,27 +1,26 @@
-"""
-Exercise #9, page 203-4
-
-9. Plan the logic for a program that prompts a user for a customer number, stock number of item being ordered, and quantity ordered. If the customer number is not between 1000 and 7999 inclusive, continue to prompt until a valid customer number is entered. If the stock number of the item is not between 201 and 850 inclusive, continue to prompt for the stock number.
-
-Pass the stock number to a method that a colleague at your organization has written; the method’s header is num getPrice(num stockNumber).
-
-The getPrice() method accepts a stock number and returns the price of the item. Multiply the price by the quantity ordered, giving the total due. Pass the customer number and the calculated price to an already written method whose signature is printBill(num custNum, num price).This method determines the customer’s name and address by using the customer ID number, and it calculates the final bill, including tax, using the price. Organize your program using as many methods as you feel are appropriate. You do not need to write the getPrice() and printBill() methods—assume that they have already been written.
-
-This is worth 15 points.
-
-
-"""
-
 start
     num custNum
     num stockNum
     num quantity
+    num totalDue
 
-    If the customer number is not between 1000 and 7999 inclusive
-        prompt until a valid customer number is entered
+    input custNum
+    input stockNum
+    input quantity
 
-    If the stock number of the item is not between 201 and 850 inclusive
-        continue to prompt for the stock number
 
+    if custNum >= 1000 AND custNum <= 7999 then
+        if stockNum >= 201 AND stockNum <= 850 then
+            itemPrice = getPrice(stockNum)
+        else then
+            output "A valid stock number is required"
+            input stockNum
+    else then
+        output "A valid customer number is required"
+        input custNum
+
+    totalDue = itemPrice * quantity
+
+    printBill(custNum, totalDue)
 
 stop
