@@ -1,0 +1,53 @@
+class smartPhone inheritsFrom phone
+    Fields
+        private num battery
+        private string WiFi
+        private num locationGPS
+	private string blueToothConn
+
+    Methods
+	public void Model()
+            super.setModel(super.getModel())
+        return
+
+	public void Type()
+            super.setType(super.getType())
+        return
+
+        public void callNumber()
+	    super.setCallNumber(super.getCallNumber())
+        return
+
+        public void endCall()
+	    super.setEndNumber(super.getEndNumber())
+        return
+
+	public void setBatteryCharge(num batteryCharge)
+	    battery = batteryCharge
+	return
+
+	public void setConWiFi(string conWiFi)
+	    WiFi = conWiFi
+	return
+
+	public void setLocationGPS(num findLocationGPS)
+	    locationGPS = findLocationGPS
+	retunr locationGPS
+
+	public void setBlueToothConn(string myBlueToothConn)
+	    blueToothConn = myBlueToothCon
+	retunr blueToothConn
+
+        public num getBattery()
+        return battery
+
+        public string getWiFi()
+        return WiFi
+
+        public string getLocationGPS()
+        return locationGPS
+
+        public string getBlueToothConn()
+        return blueToothConn
+
+endClass
