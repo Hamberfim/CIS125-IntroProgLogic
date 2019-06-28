@@ -1,0 +1,34 @@
+start
+    Declarations
+        num INDEX_SIZE = 3
+        Phone SmartPhone[INDEX_SIZE]
+
+    index = 0
+    while index < INDEX_SIZE
+        SmartPhone[index] = getPhoneData()
+        index = index + 1
+    endwhile
+
+    index = 0
+    while index < INDEX_SIZE
+        display(SmartPhone[index])
+        index = index + 1
+    endwhile
+stop
+
+
+Phone getPhoneData()
+    Phone smart
+    string name
+    output "Enter name"
+    input name
+    string model
+    output "enter model"
+    input model
+return smart
+
+void display(Phone smart)
+    output "Smart Phone"
+    output "Name: ", smart.getName()
+    output "Model: ", smart.getModel90
+return

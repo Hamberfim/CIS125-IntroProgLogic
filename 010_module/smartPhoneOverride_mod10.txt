@@ -21,7 +21,11 @@ class smartPhone inheritsFrom phone
 
 	public void setBlueToothConn(string myBlueToothConn)
 	    blueToothConn = myBlueToothCon
-	retunr blueToothConn
+	return blueToothConn
+
+	private void setCallNumber(num connectLTE)
+            callNumber = connectLTE
+        return
 
         public num getBattery()
         return battery
@@ -34,5 +38,11 @@ class smartPhone inheritsFrom phone
 
         public string getBlueToothConn()
         return blueToothConn
+
+        public num placeCall(connectLTE)
+        return output "connection made"
+
+        public num endCall(connectLTE)
+        return output "connection ended"
 
 endClass

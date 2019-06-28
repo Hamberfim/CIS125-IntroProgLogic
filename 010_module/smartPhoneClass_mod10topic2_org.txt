@@ -6,6 +6,21 @@ class smartPhone inheritsFrom phone
 	private string blueToothConn
 
     Methods
+	public void Model()
+            super.setModel(super.getModel())
+        return
+
+	public void Type()
+            super.setType(super.getType())
+        return
+
+        public void callNumber()
+	    super.setCallNumber(super.getCallNumber())
+        return
+
+        public void endCall()
+	    super.setEndNumber(super.getEndNumber())
+        return
 
 	public void setBatteryCharge(num batteryCharge)
 	    battery = batteryCharge

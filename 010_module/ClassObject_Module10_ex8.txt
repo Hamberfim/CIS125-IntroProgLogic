@@ -1,0 +1,170 @@
+a.)
+class Book
+    Fields
+        private num stockNum
+        private string author
+        private string title
+        private num price
+        private num pages
+
+    Methods
+        public void setStockNum(num bookStockNum)
+            stockNum = bookStockNum
+        return
+
+        public void setAuthor(string bookAuthor)
+            author = bookAuthor
+        return
+
+        public void setTitle(string bookTitle)
+            title = bookTitle
+        return
+
+        public void setPrice(num bookPrice)
+            price = bookPrice
+        return
+
+        public void setPages(num bookPages)
+            pages = bookPages
+        return
+
+        public num getStockNum()
+        return stockNum
+
+        public string getAuthor()
+        return author
+
+        public string getTitle()
+        return title
+
+        public num getPrice()
+        return price
+
+        public num getPages()
+        return pages
+endClass
+
+b.)
+start
+    Declarations
+        Book poems
+        Book novel
+
+        num stockNum
+        string author
+        string title
+        num price
+        num pages
+
+    poems.setStockNum(stockNum)
+    poems.setAuthor("Ben Beverly")
+    poems.setTitle("Some kind of Poems")
+    poems.setPrice(19.99)
+    poems.setPages(205)
+
+    stockNum = poems.getStockNum()
+    author = poems.getAuthor()
+    title = poems.getTitle()
+    price = poems.getPrice()
+    pages = poems.getPages()
+
+    novel.setStockNum(stockNum)
+    novel.setAuthor("Karla Van Dubious")
+    novel.setTitle("Lackluster Reading")
+    novel.setPrice(49.99)
+    novel.setPages(458)
+
+    stockNum = novel.getStockNum()
+    author = novel.getAuthor()
+    title = novel.getTitle()
+    price = novel.getPrice()
+    pages = novel.getPages()
+
+    output poems.stockNum, poems.author, poems.title, poems.price, poems.pages
+    output novel.stockNum, novel.author, novel.title, novel.price, novel.pages
+stop
+
+c.)
+start
+    INDEX_SIZE = 10
+    num books[INDEX_SIZE]
+
+    num stockNum
+    string author
+    string title
+    num price
+    num pages
+
+    index = 0
+    while index < INDEX_SIZE
+        books = input stockNum[index]
+        books = input author[index]
+        books = input title[index]
+        books = input price[index]
+        books = input pages[index]
+        index = index + 1
+    endwhile
+
+    index = 0
+    while index < INDEX_SIZE
+        output books[index]
+        index = index + 1
+    endwhile
+stop
+
+d.)
+class textBook inheritsFrom Book
+    Fields
+        private num gradeLVL
+
+    Methods
+        public void setGradeLVL(num bookGradeLVL)
+            gradeLVL = bookGradeLVL
+        return
+
+        public num getGradeLVL()
+        return gradeLVL
+endClass
+
+e.)
+start
+    Declarations
+        Book fiction
+        num stockNum
+        string author
+        string title
+        num price
+        num pages
+
+        textBook math
+        num gradeLevel
+
+    fiction.setStockNum(stockNum)
+    fiction.setAuthor("Bruce Hilliam")
+    fiction.setTitle("Space Potato")
+    fiction.setPrice(29.99)
+    fiction.setPages(249)
+
+    stockNum = fiction.getStockNum()
+    author = fiction.getAuthor()
+    title = fiction.getTitle()
+    price = fiction.getPrice()
+    pages = fiction.getPages()
+
+    math.setStockNum(stockNum)
+    math.setAuthor("Turning")
+    math.setTitle("Math for Statistics")
+    math.setPrice(109.99)
+    math.setPages(852)
+    math.setGradeLevel(10)
+
+    stockNum = math.getStockNum()
+    author = math.getAuthor()
+    title = math.getTitle()
+    price = math.getPrice()
+    pages = math.getPages()
+    gradeLevel = math.getGradeLevel()
+
+    output fiction.stockNum, fiction.author, fiction.title, fiction.price, fiction.pages
+    output math.stockNum, math.author, math.title, math.price, math.pages, math.gradeLevel
+stop
